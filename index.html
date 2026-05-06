@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultLane — The Continuity Layer for the Digital Age</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0A0F1C] text-slate-100 font-sans overflow-x-hidden">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-[#0A0F1C]/90 backdrop-blur-md">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-x-3">
+        <img src="logo.svg" alt="VaultLane" class="h-9 w-auto">
+      </div>
+      <div class="hidden md:flex items-center gap-x-10 text-sm font-medium tracking-wide">
+        <a href="#vision" class="hover:text-[#00D4FF] transition-colors">Vision</a>
+        <a href="#how" class="hover:text-[#00D4FF] transition-colors">How It Works</a>
+        <a href="#features" class="hover:text-[#00D4FF] transition-colors">Features</a>
+        <a href="#future" class="hover:text-[#00D4FF] transition-colors">Future</a>
+      </div>
+      <button onclick="showWaitlistModal()" 
+              class="px-8 py-3.5 bg-[#00D4FF] hover:bg-[#00E5FF] text-[#0A0F1C] font-semibold rounded-2xl transition-all active:scale-95">
+        Get Early Access
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center pt-20">
+    <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7">
+        <div class="inline-flex items-center gap-x-2 px-4 py-2 bg-slate-900/50 rounded-3xl text-sm mb-6 border border-slate-700">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D4FF] opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00D4FF]"></span>
+          </span>
+          Coming 2026 • Pre-MVP
+        </div>
+        <h1 class="text-6xl md:text-7xl font-semibold tracking-[-2px] leading-none mb-6">
+          Your digital life.<br>
+          <span class="text-[#00D4FF]">Never lost.</span>
+        </h1>
+        <p class="text-2xl text-slate-400 max-w-lg mb-10">
+          The Continuity Layer for the Digital Age.<br>
+          Zero-knowledge. Life-event verified. Eternally protected.
+        </p>
+        <div class="flex items-center gap-x-4">
+          <button onclick="showWaitlistModal()" 
+                  class="px-10 py-5 bg-white text-[#0A0F1C] font-semibold text-lg rounded-3xl hover:shadow-2xl hover:shadow-[#00D4FF]/20 transition-all">
+            Get Early Access
+          </button>
+          <button onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})"
+                  class="px-8 py-5 border border-slate-400 text-slate-400 hover:text-white rounded-3xl font-medium transition-colors">
+            Watch the vision →
+          </button>
+        </div>
+        <p class="text-xs text-slate-500 mt-8 flex items-center gap-x-2">
+          <span class="bg-emerald-400 w-2 h-2 rounded-full animate-pulse"></span>
+          Trusted by forward-thinking families and estate professionals
+        </p>
+      </div>
+      <div class="md:col-span-5 relative">
+        <div class="aspect-square bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-[4rem] border border-[#00D4FF]/20 flex items-center justify-center relative overflow-hidden">
+          <div class="text-center">
+            <div class="w-40 h-40 mx-auto rounded-3xl bg-slate-900 border border-[#00D4FF] flex items-center justify-center mb-8 shadow-2xl shadow-[#00D4FF]/30">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="25" width="70" height="70" rx="12" stroke="#00D4FF" stroke-width="12"/>
+                <circle cx="60" cy="70" r="12" fill="#0A0F1C"/>
+              </svg>
+            </div>
+            <p class="text-[#00D4FF] text-xl font-medium">Secure • Private • Eternal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="vision" class="py-24 border-t border-slate-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="grid md:grid-cols-12 gap-16">
+        <div class="md:col-span-5">
+          <span class="text-[#F5C400] uppercase tracking-widest text-sm font-medium">The Problem</span>
+          <h2 class="text-5xl font-semibold tracking-tight mt-3">Digital oblivion is the silent thief of legacies.</h2>
+        </div>
+        <div class="md:col-span-7 text-slate-400 text-lg space-y-6">
+          <p>As our lives move entirely online, traditional wills are no longer enough. Billions in crypto, irreplaceable memories, and final wishes remain locked behind passwords and legal deadlocks.</p>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-slate-900 p-8 rounded-3xl">Lost financial assets &amp; inaccessible wallets</div>
+            <div class="bg-slate-900 p-8 rounded-3xl">Locked smartphones and social accounts</div>
+            <div class="bg-slate-900 p-8 rounded-3xl">Court battles over digital access</div>
+            <div class="bg-slate-900 p-8 rounded-3xl">Final wishes discovered too late</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION / ARCHITECTURE -->
+  <section id="how" class="py-24 bg-[#111827]">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <h2 class="text-5xl font-semibold text-center mb-16">The Continuity Layer</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Zero-Knowledge -->
+        <div class="bg-[#0A0F1C] border border-slate-700 rounded-3xl p-8 hover:border-[#00D4FF] transition-colors">
+          <div class="h-12 w-12 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl flex items-center justify-center text-2xl mb-6">🔒</div>
+          <h3 class="text-2xl font-semibold mb-2">Zero-Knowledge Vaults</h3>
+          <p class="text-slate-400">We never see your data. Only you—and your beneficiaries at the right moment—hold the keys.</p>
+        </div>
+        <!-- LEVS -->
+        <div class="bg-[#0A0F1C] border border-slate-700 rounded-3xl p-8 hover:border-[#00D4FF] transition-colors">
+          <div class="h-12 w-12 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl flex items-center justify-center text-2xl mb-6">🛡️</div>
+          <h3 class="text-2xl font-semibold mb-2">Life-Event Verification System</h3>
+          <p class="text-slate-400">Guardians + Heartbeat + Official verification. Triple-layered protection against premature or erroneous release.</p>
+        </div>
+        <!-- ALT -->
+        <div class="bg-[#0A0F1C] border border-slate-700 rounded-3xl p-8 hover:border-[#00D4FF] transition-colors">
+          <div class="h-12 w-12 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl flex items-center justify-center text-2xl mb-6">📤</div>
+          <h3 class="text-2xl font-semibold mb-2">Automated Legacy Transfer</h3>
+          <p class="text-slate-400">Intelligent, conditional, staged release. Your beneficiaries receive a curated Legacy Dashboard—not a password dump.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-24">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <h2 class="text-5xl font-semibold text-center mb-6">Built for what matters</h2>
+      <p class="text-center text-slate-400 mb-16 max-w-md mx-auto">Financial assets • Legal documents • Digital identities • Personal legacies</p>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
+          <p class="text-[#F5C400] mb-2 text-sm">FINANCIAL &amp; CRYPTO</p>
+          <p class="text-3xl font-medium leading-tight">Private keys, seed phrases, insurance policies, and bank details—securely transferred.</p>
+        </div>
+        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
+          <p class="text-[#F5C400] mb-2 text-sm">LEGAL &amp; IDENTITY</p>
+          <p class="text-3xl font-medium leading-tight">Wills, power of attorney, birth certificates, and official documents.</p>
+        </div>
+        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
+          <p class="text-[#F5C400] mb-2 text-sm">DIGITAL IDENTITY</p>
+          <p class="text-3xl font-medium leading-tight">Social accounts, domain names, SaaS subscriptions—everything in one place.</p>
+        </div>
+        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
+          <p class="text-[#F5C400] mb-2 text-sm">PERSONAL LEGACY</p>
+          <p class="text-3xl font-medium leading-tight">Video messages, letters, photo archives, and ethical wills that live forever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST CTA -->
+  <section class="py-24 bg-gradient-to-r from-[#00D4FF]/10 to-transparent border-t border-b border-slate-700">
+    <div class="max-w-screen-2xl mx-auto px-8 text-center">
+      <h2 class="text-5xl font-semibold mb-4">Be among the first to secure your digital legacy</h2>
+      <p class="text-slate-400 mb-12 max-w-md mx-auto">Early access granted to founding members. Limited spots available.</p>
+      <button onclick="showWaitlistModal()" 
+              class="text-2xl px-14 py-7 bg-[#00D4FF] text-[#0A0F1C] font-semibold rounded-3xl hover:scale-105 transition-transform">
+        Get Early Access →
+      </button>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="py-24 border-t border-slate-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1">
+          <div class="uppercase text-[#00D4FF] text-sm tracking-widest">Founder &amp; CEO</div>
+          <h3 class="text-4xl font-semibold mt-2">Abdul Rasheed Bello</h3>
+          <p class="text-slate-400 mt-6 leading-relaxed">
+            Visionary builder with deep expertise in digital security and estate technology. 
+            On a mission to ensure no digital life ever disappears.
+          </p>
+          <div class="flex gap-x-6 mt-10">
+            <a href="mailto:abdul.rasheed@vaultlane.one" class="flex items-center gap-x-2 hover:text-[#00D4FF]">
+              <span class="text-xl">✉️</span>
+              <span>abdul.rasheed@vaultlane.one</span>
+            </a>
+            <a href="https://www.linkedin.com/in/abdul-rasheed-bello-26221a367/" target="_blank" class="flex items-center gap-x-2 hover:text-[#00D4FF]">
+              <span class="text-xl">in</span>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 text-slate-400 text-lg">
+          “We are not building another password manager.<br>
+          We are building the final, unbreakable bridge between generations.”
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-16 border-t border-slate-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-y-8">
+        <div class="flex items-center gap-x-3">
+          <img src="logo.svg" alt="VaultLane" class="h-8">
+          <span class="text-slate-400 text-sm">© 2026 VaultLane Systems. All Rights Reserved.</span>
+        </div>
+        <div class="flex gap-x-8 text-sm">
+          <a href="#" class="hover:text-white">Privacy</a>
+          <a href="#" class="hover:text-white">Security</a>
+          <a href="#" class="hover:text-white">RUFADAA Compliance</a>
+          <a href="#" class="hover:text-white">Contact</a>
+        </div>
+        <p class="text-xs text-slate-500">The Continuity Layer for the Digital Age</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WAITLIST MODAL -->
+  <div id="waitlistModal" onclick="if(event.target===this) hideWaitlistModal()" 
+       class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center">
+    <div onclick="event.stopImmediatePropagation()" 
+         class="bg-[#111827] rounded-3xl max-w-md w-full mx-4 p-10">
+      <h3 class="text-3xl font-semibold mb-2">Get Early Access to VaultLane</h3>
+      <p class="text-slate-400 mb-8">Be first in line when we launch. Early members receive founder pricing and priority access.</p>
+      
+      <form id="waitlistForm" onsubmit="handleSubmit(event)" class="space-y-6">
+        <input type="email" id="email" placeholder="your@email.com" 
+               class="w-full px-6 py-5 bg-slate-900 border border-slate-700 rounded-2xl focus:outline-none focus:border-[#00D4FF] text-lg">
+        <input type="text" id="name" placeholder="Full name" 
+               class="w-full px-6 py-5 bg-slate-900 border border-slate-700 rounded-2xl focus:outline-none focus:border-[#00D4FF] text-lg">
+        
+        <button type="submit" 
+                class="w-full py-6 bg-[#00D4FF] text-[#0A0F1C] font-semibold text-xl rounded-3xl hover:bg-[#F5C400] transition-colors">
+          Get Early Access
+        </button>
+      </form>
+      <p onclick="hideWaitlistModal()" class="text-center text-slate-400 mt-6 cursor-pointer">Close</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

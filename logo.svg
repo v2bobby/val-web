@@ -1,0 +1,10 @@
+<svg width="200" height="52" viewBox="0 0 200 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vault Icon -->
+  <rect x="8" y="12" width="32" height="28" rx="4" ry="4" stroke="#00D4FF" stroke-width="3.5"/>
+  <rect x="14" y="18" width="8" height="8" rx="1" fill="#0A0F1C"/>
+  <!-- Digital continuity line -->
+  <path d="M48 26 Q65 14 82 26 Q99 38 116 26" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Text -->
+  <text x="124" y="37" font-family="system-ui" font-size="27" font-weight="700" fill="#F8FAFC" letter-spacing="-1.2">Vault</text>
+  <text x="124" y="37" font-family="system-ui" font-size="27" font-weight="700" fill="#00D4FF" letter-spacing="-1.2">Lane</text>
+</svg>
