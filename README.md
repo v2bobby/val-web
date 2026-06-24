@@ -1,89 +1,74 @@
-# VaultLane
+# Reep
 
 **The Continuity Layer for the Digital Age**
 
-Premium landing page for VaultLane — a mission-critical digital inheritance platform.
+A full, multi-page marketing site for Reep — a mission-critical digital inheritance platform. Rebuilt from the ground up as a true multi-page site (no SPA rewrites), plain HTML/CSS/JS, no build step.
 
 ## Live Site
 
-https://vaultlane.one
+https://reep.app *(placeholder — update once domain is live)*
 
-## Project Overview
+## Pages
 
-This repository contains the complete, production-ready static landing page for VaultLane.
-
-- Clean, minimalist, futuristic aesthetic
-- Dark theme with electric cyan accents
-- Fully responsive
-- Zero dependencies (Tailwind via CDN)
-- Optimized for high-end tech brand perception
-- Ready for Vercel deployment
+| Page | File | Purpose |
+|---|---|---|
+| Home | `index.html` | Full-viewport hero, problem/solution, feature grid, business model teaser |
+| Product | `product.html` | User journey, asset modules, LEVS explained, beneficiary dashboard preview |
+| Business Model | `business-model.html` | Value creation, revenue streams, scalability, moat, tech leverage |
+| Security & Compliance | `security.html` | Zero-knowledge architecture, RUFADAA/GDPR, data sovereignty, audit trails |
+| Pricing | `pricing.html` | Three tiers, comparison table, B2B2C callout, FAQ |
+| Demo / Signup | `demo.html` | Focused waitlist page — "Coming Soon" framing, no real backend yet |
+| Resources / Blog | `resources.html` | Article index |
+| → Article 1 | `blog/inheritance-gap-crypto.html` | The crypto inheritance gap |
+| → Article 2 | `blog/wills-vs-digital-vaults.html` | Wills vs. digital vaults |
+| → Article 3 | `blog/inside-levs.html` | How the Life-Event Verification System works |
+| About | `about.html` | Mission, founders, roadmap, contact |
 
 ## Tech Stack
 
-- HTML5 + Tailwind CSS (via CDN)
-- Vanilla JavaScript
-- SVG logo
-- Vercel configuration included
+- HTML5 + Tailwind CSS (via CDN) — no build step
+- Vanilla JavaScript (`js/main.js` for nav/reveals, `js/waitlist.js` for the signup form)
+- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (utility/data)
+- Vercel configuration included (static hosting, no SPA rewrite — this is a real multi-page site)
+
+## Design System
+
+All shared tokens live in `css/styles.css` as CSS custom properties:
+
+- **Ink** `#0E1320` — primary dark surface
+- **Sand** `#FAF6EF` — warm light surface
+- **Continuity green** `#2BB389` — primary accent, signifies "active / ongoing"
+- **Brass** `#C9A86A` — sparing legacy/heirloom accent
+- **Slate** `#5B6B7F` — body text on light backgrounds
+
+**Signature element:** the "heartbeat" pulse line (`.heartbeat-line` / `.heartbeat-path` in `styles.css`) — a literal visualization of Reep's inactivity-monitoring mechanism, used on the homepage hero and the waitlist success state.
 
 ## Quick Start (Local)
 
-1. Download or clone this folder
-2. Open `index.html` in any modern browser
-3. No build step required
+```
+python3 -m http.server 8000
+```
+Then open `http://localhost:8000`. No build step required.
 
 ## Deployment (Vercel)
 
 1. Push this folder to a GitHub repository
-2. Import the repo at [vercel.com](https://vercel.com)
-3. Vercel will automatically detect `vercel.json`
-4. Add your custom domain `vaultlane.one` in the Vercel dashboard (Project → Settings → Domains)
-
-The included `vercel.json` provides:
-- Clean URLs
-- SPA-style rewrites
-- Security headers (nosniff, clickjacking protection, referrer policy)
-
-## File Structure
-
-```
-vaultlane-landing/
-├── index.html          # Main landing page
-├── styles.css          # Additional premium styling
-├── script.js           # Modal + form interactions
-├── logo.svg            # Official VaultLane logo
-├── vercel.json         # Production deployment config
-├── README.md           # This file
-└── docs/
-    └── vaultlane-strategic-blueprint.md   # Investor-ready strategy document
-```
-
-## Branding
-
-- **Primary Color**: Deep midnight navy (`#0A0F1C`)
-- **Accent**: Electric cyan (`#00D4FF`)
-- **Highlight**: Premium gold (`#F5C400`)
-- **Typography**: Inter / system-ui (clean, modern, highly legible)
-- **Tone**: Confident. Empathetic. Authoritative. Futuristic without hype.
+2. Import the repo at vercel.com
+3. Vercel auto-detects `vercel.json` (clean URLs, security headers)
+4. Add the custom domain in Project → Settings → Domains
 
 ## Important Notes
 
-- The "Get Early Access" form is currently a demo (shows success alert).  
-  Replace the `handleSubmit` function in `script.js` with a real backend or service (e.g., ConvertKit, Buttondown, or custom API) before launch.
-- Open Graph image (`og-image.jpg`) is referenced but not included — add a high-quality social share image for best results.
-- The site is fully static and works offline after initial load.
+- The waitlist form (`demo.html` / `js/waitlist.js`) does **not** submit anywhere yet — it shows a polished success state client-side only. Wire up `handleWaitlistSubmit()` in `js/waitlist.js` to a real backend or provider (e.g. ConvertKit, Buttondown, custom API) before launch.
+- Images are hotlinked from Unsplash's CDN under the Unsplash License (free, no attribution required). See `IMAGE_SOURCES.md` for the verified source list. For production, consider downloading and self-hosting for reliability and performance.
+- Founder contact details are placeholders ("Contact details coming soon") pending real info for Ugwu Jonas and Emeh David.
 
-## Founder
+## Founders
 
-**Abdul Rasheed Bello**  
-Founder & CEO  
-abdul.rasheed@vaultlane.one  
-https://www.linkedin.com/in/abdul-rasheed-bello-26221a367/
+**Ugwu Jonas** — Co-Founder
+**Emeh David** — Co-Founder
+*(Contact details to be added)*
 
 ## License
 
-© 2026 VaultLane Systems. All Rights Reserved.
-
----
-
-Built with precision for a world-class digital legacy platform.
+© 2026 Reep Systems. All Rights Reserved.

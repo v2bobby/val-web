@@ -1,279 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VaultLane — The Continuity Layer for the Digital Age</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="The Continuity Layer for the Digital Age. Secure digital inheritance with zero-knowledge encryption and life-event verification.">
-  <link rel="canonical" href="https://vaultlane.one">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reep — The Continuity Layer for the Digital Age</title>
+<meta name="description" content="Reep is the continuity layer for the digital age — secure digital inheritance with zero-knowledge encryption and life-event verification, so nothing you've built online is ever lost.">
+<link rel="canonical" href="https://reep.app/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="VaultLane — The Continuity Layer for the Digital Age">
-  <meta property="og:description" content="Modern digital inheritance. Zero-knowledge. Life-event verified. Eternally protected.">
-  <meta property="og:url" content="https://vaultlane.one">
-  <meta property="og:type" content="website">
+<meta property="og:title" content="Reep — The Continuity Layer for the Digital Age">
+<meta property="og:description" content="Zero-knowledge digital vaults. Life-event verified transfer. Your digital life, never lost.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://reep.app/">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="VaultLane — The Continuity Layer for the Digital Age">
-  <meta name="twitter:description" content="The secure platform for passing on your digital legacy.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#0A0F1C] text-slate-100 font-sans overflow-x-hidden">
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-[#0A0F1C]/90 backdrop-blur-md">
-    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-      <!-- Logo -->
-      <a href="/" class="flex items-center">
-        <svg width="168" height="36" viewBox="0 0 180 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-9 w-auto">
-          <!-- Refined Vault Icon -->
-          <rect x="3" y="5" width="24" height="26" rx="5" stroke="#00D4FF" stroke-width="2.75"/>
-          <path d="M11 13v10" stroke="#00D4FF" stroke-width="2" stroke-linecap="round"/>
-          
-          <!-- Brand Name -->
-          <text x="36" y="26" 
-                font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-                font-size="21" font-weight="700" letter-spacing="-1.6" fill="#F8FAFC">
-            Vault<tspan fill="#00D4FF">Lane</tspan>
-          </text>
-        </svg>
-      </a>
+<body>
 
-      <div class="hidden md:flex items-center gap-x-10 text-sm font-medium tracking-wide">
-        <a href="#vision" class="hover:text-[#00D4FF] transition-colors">Vision</a>
-        <a href="#how" class="hover:text-[#00D4FF] transition-colors">How It Works</a>
-        <a href="#features" class="hover:text-[#00D4FF] transition-colors">Features</a>
-        <a href="#future" class="hover:text-[#00D4FF] transition-colors">Future</a>
-      </div>
-
-      <button onclick="showWaitlistModal()" 
-              class="px-8 py-3.5 bg-[#00D4FF] hover:bg-[#00E5FF] text-[#0A0F1C] font-semibold rounded-2xl transition-all active:scale-95">
-        Get Early Access
-      </button>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+      Reep
+    </a>
+    <div class="nav-links desktop">
+      <a href="product.html">Product</a>
+      <a href="business-model.html">Business Model</a>
+      <a href="security.html">Security</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="min-h-screen flex items-center pt-20">
-    <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-12 items-center">
-      <div class="md:col-span-7">
-        <div class="inline-flex items-center gap-x-2 px-4 py-2 bg-slate-900/50 rounded-3xl text-sm mb-6 border border-slate-700">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00D4FF] opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00D4FF]"></span>
-          </span>
-          Coming 2026 • Pre-MVP
-        </div>
-        <h1 class="text-6xl md:text-7xl font-semibold tracking-[-2px] leading-none mb-6">
-          Your digital life.<br>
-          <span class="text-[#00D4FF]">Never lost.</span>
-        </h1>
-        <p class="text-2xl text-slate-400 max-w-lg mb-10">
-          The Continuity Layer for the Digital Age.<br>
-          Zero-knowledge. Life-event verified. Eternally protected.
-        </p>
-        <div class="flex items-center gap-x-4">
-          <button onclick="showWaitlistModal()" 
-                  class="px-10 py-5 bg-white text-[#0A0F1C] font-semibold text-lg rounded-3xl hover:shadow-2xl hover:shadow-[#00D4FF]/20 transition-all">
-            Get Early Access
-          </button>
-          <button onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})"
-                  class="px-8 py-5 border border-slate-400 text-slate-400 hover:text-white rounded-3xl font-medium transition-colors">
-            Watch the vision →
-          </button>
-        </div>
-        <p class="text-xs text-slate-500 mt-8 flex items-center gap-x-2">
-          <span class="bg-emerald-400 w-2 h-2 rounded-full animate-pulse"></span>
-          Trusted by forward-thinking families and estate professionals
-        </p>
-      </div>
-      <div class="md:col-span-5 relative">
-        <div class="aspect-square bg-gradient-to-br from-[#00D4FF]/10 to-transparent rounded-[4rem] border border-[#00D4FF]/20 flex items-center justify-center relative overflow-hidden">
-          <div class="text-center">
-            <div class="w-40 h-40 mx-auto rounded-3xl bg-slate-900 border border-[#00D4FF] flex items-center justify-center mb-8 shadow-2xl shadow-[#00D4FF]/30">
-              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="25" y="25" width="70" height="70" rx="12" stroke="#00D4FF" stroke-width="12"/>
-                <circle cx="60" cy="70" r="12" fill="#0A0F1C"/>
-              </svg>
-            </div>
-            <p class="text-[#00D4FF] text-xl font-medium">Secure • Private • Eternal</p>
-          </div>
-        </div>
-      </div>
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="demo.html" class="btn btn-primary">Launch Demo</a>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Open menu">☰</button>
     </div>
-  </section>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="product.html">Product</a>
+    <a href="business-model.html">Business Model</a>
+    <a href="security.html">Security</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="demo.html">Launch Demo</a>
+  </div>
+</nav>
 
-  <!-- PROBLEM -->
-  <section id="vision" class="py-24 border-t border-slate-800">
-    <div class="max-w-screen-2xl mx-auto px-8">
-      <div class="grid md:grid-cols-12 gap-16">
-        <div class="md:col-span-5">
-          <span class="text-[#F5C400] uppercase tracking-widest text-sm font-medium">The Problem</span>
-          <h2 class="text-5xl font-semibold tracking-tight mt-3">Digital oblivion is the silent thief of legacies.</h2>
-        </div>
-        <div class="md:col-span-7 text-slate-400 text-lg space-y-6">
-          <p>As our lives move entirely online, traditional wills are no longer enough. Billions in crypto, irreplaceable memories, and final wishes remain locked behind passwords and legal deadlocks.</p>
-          <div class="grid grid-cols-2 gap-6">
-            <div class="bg-slate-900 p-8 rounded-3xl">Lost financial assets &amp; inaccessible wallets</div>
-            <div class="bg-slate-900 p-8 rounded-3xl">Locked smartphones and social accounts</div>
-            <div class="bg-slate-900 p-8 rounded-3xl">Court battles over digital access</div>
-            <div class="bg-slate-900 p-8 rounded-3xl">Final wishes discovered too late</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- HERO — full viewport -->
+<section class="surface-dark" style="min-height:100vh; display:flex; flex-direction:column; justify-content:center; position:relative; overflow:hidden; padding-top:68px;">
+  <div style="position:absolute; inset:0; background-image:url('https://images.unsplash.com/photo-1510906594845-bc082582c8cc?auto=format&fit=crop&w=2000&q=60'); background-size:cover; background-position:center; opacity:0.16;"></div>
+  <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(14,19,32,0.4) 0%, rgba(14,19,32,0.92) 70%, var(--ink) 100%);"></div>
 
-  <!-- SOLUTION / ARCHITECTURE -->
-  <section id="how" class="py-24 bg-[#111827]">
-    <div class="max-w-screen-2xl mx-auto px-8">
-      <h2 class="text-5xl font-semibold text-center mb-16">The Continuity Layer</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Zero-Knowledge -->
-        <div class="bg-[#0A0F1C] border border-slate-700 rounded-3xl p-8 hover:border-[#00D4FF] transition-colors">
-          <div class="h-12 w-12 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl flex items-center justify-center text-2xl mb-6">🔒</div>
-          <h3 class="text-2xl font-semibold mb-2">Zero-Knowledge Vaults</h3>
-          <p class="text-slate-400">We never see your data. Only you—and your beneficiaries at the right moment—hold the keys.</p>
-        </div>
-        <!-- LEVS -->
-        <div class="bg-[#0A0F1C] border border-slate-700 rounded-3xl p-8 hover:border-[#00D4FF] transition-colors">
-          <div class="h-12 w-12 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl flex items-center justify-center text-2xl mb-6">🛡️</div>
-          <h3 class="text-2xl font-semibold mb-2">Life-Event Verification System</h3>
-          <p class="text-slate-400">Guardians + Heartbeat + Official verification. Triple-layered protection against premature or erroneous release.</p>
-        </div>
-        <!-- ALT -->
-        <div class="bg-[#0A0F1C] border border-slate-700 rounded-3xl p-8 hover:border-[#00D4FF] transition-colors">
-          <div class="h-12 w-12 bg-[#00D4FF]/10 text-[#00D4FF] rounded-2xl flex items-center justify-center text-2xl mb-6">📤</div>
-          <h3 class="text-2xl font-semibold mb-2">Automated Legacy Transfer</h3>
-          <p class="text-slate-400">Intelligent, conditional, staged release. Your beneficiaries receive a curated Legacy Dashboard—not a password dump.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section id="features" class="py-24">
-    <div class="max-w-screen-2xl mx-auto px-8">
-      <h2 class="text-5xl font-semibold text-center mb-6">Built for what matters</h2>
-      <p class="text-center text-slate-400 mb-16 max-w-md mx-auto">Financial assets • Legal documents • Digital identities • Personal legacies</p>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
-          <p class="text-[#F5C400] mb-2 text-sm">FINANCIAL &amp; CRYPTO</p>
-          <p class="text-3xl font-medium leading-tight">Private keys, seed phrases, insurance policies, and bank details—securely transferred.</p>
-        </div>
-        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
-          <p class="text-[#F5C400] mb-2 text-sm">LEGAL &amp; IDENTITY</p>
-          <p class="text-3xl font-medium leading-tight">Wills, power of attorney, birth certificates, and official documents.</p>
-        </div>
-        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
-          <p class="text-[#F5C400] mb-2 text-sm">DIGITAL IDENTITY</p>
-          <p class="text-3xl font-medium leading-tight">Social accounts, domain names, SaaS subscriptions—everything in one place.</p>
-        </div>
-        <div class="group p-8 bg-slate-900 rounded-3xl hover:bg-slate-800 transition-all">
-          <p class="text-[#F5C400] mb-2 text-sm">PERSONAL LEGACY</p>
-          <p class="text-3xl font-medium leading-tight">Video messages, letters, photo archives, and ethical wills that live forever.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WAITLIST CTA -->
-  <section class="py-24 bg-gradient-to-r from-[#00D4FF]/10 to-transparent border-t border-b border-slate-700">
-    <div class="max-w-screen-2xl mx-auto px-8 text-center">
-      <h2 class="text-5xl font-semibold mb-4">Be among the first to secure your digital legacy</h2>
-      <p class="text-slate-400 mb-12 max-w-md mx-auto">Early access granted to founding members. Limited spots available.</p>
-      <button onclick="showWaitlistModal()" 
-              class="text-2xl px-14 py-7 bg-[#00D4FF] text-[#0A0F1C] font-semibold rounded-3xl hover:scale-105 transition-transform">
-        Get Early Access →
-      </button>
-    </div>
-  </section>
-
-  <!-- FOUNDER -->
-  <section class="py-24 border-t border-slate-800">
-    <div class="max-w-screen-2xl mx-auto px-8">
-      <div class="flex flex-col md:flex-row gap-12 items-center">
-        <div class="flex-1">
-          <div class="uppercase text-[#00D4FF] text-sm tracking-widest">Founder &amp; CEO</div>
-          <h3 class="text-4xl font-semibold mt-2">Abdul Rasheed Bello</h3>
-          <p class="text-slate-400 mt-6 leading-relaxed">
-            Visionary builder with deep expertise in digital security and estate technology. 
-            On a mission to ensure no digital life ever disappears.
-          </p>
-          <div class="flex gap-x-6 mt-10">
-            <a href="mailto:abdul.rasheed@vaultlane.one" class="flex items-center gap-x-2 hover:text-[#00D4FF]">
-              <span class="text-xl">✉️</span>
-              <span>abdul.rasheed@vaultlane.one</span>
-            </a>
-            <a href="https://www.linkedin.com/in/abdul-rasheed-bello-26221a367/" target="_blank" class="flex items-center gap-x-2 hover:text-[#00D4FF]">
-              <span class="text-xl">in</span>
-              <span>LinkedIn</span>
-            </a>
-          </div>
-        </div>
-        <div class="flex-1 text-slate-400 text-lg">
-          “We are not building another password manager.<br>
-          We are building the final, unbreakable bridge between generations.”
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-black py-16 border-t border-slate-800">
-    <div class="max-w-screen-2xl mx-auto px-8">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-y-8">
-        <div class="flex items-center gap-x-3">
-          <!-- Small footer logo -->
-          <svg width="120" height="26" viewBox="0 0 180 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="24" height="26" rx="5" stroke="#00D4FF" stroke-width="2.75"/>
-            <path d="M11 13v10" stroke="#00D4FF" stroke-width="2" stroke-linecap="round"/>
-            <text x="36" y="26" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-                  font-size="18" font-weight="700" letter-spacing="-1.4" fill="#F8FAFC">
-              Vault<tspan fill="#00D4FF">Lane</tspan>
-            </text>
-          </svg>
-          <span class="text-slate-400 text-sm">© 2026 VaultLane Systems</span>
-        </div>
-        <div class="flex gap-x-8 text-sm">
-          <a href="#" class="hover:text-white">Privacy</a>
-          <a href="#" class="hover:text-white">Security</a>
-          <a href="#" class="hover:text-white">RUFADAA Compliance</a>
-          <a href="#" class="hover:text-white">Contact</a>
-        </div>
-        <p class="text-xs text-slate-500">The Continuity Layer for the Digital Age</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WAITLIST MODAL -->
-  <div id="waitlistModal" onclick="if(event.target===this) hideWaitlistModal()" 
-       class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center">
-    <div onclick="event.stopImmediatePropagation()" 
-         class="bg-[#111827] rounded-3xl max-w-md w-full mx-4 p-10">
-      <h3 class="text-3xl font-semibold mb-2">Get Early Access to VaultLane</h3>
-      <p class="text-slate-400 mb-8">Be first in line when we launch. Early members receive founder pricing and priority access.</p>
-      
-      <form id="waitlistForm" onsubmit="handleSubmit(event)" class="space-y-6">
-        <input type="email" id="email" placeholder="your@email.com" 
-               class="w-full px-6 py-5 bg-slate-900 border border-slate-700 rounded-2xl focus:outline-none focus:border-[#00D4FF] text-lg">
-        <input type="text" id="name" placeholder="Full name" 
-               class="w-full px-6 py-5 bg-slate-900 border border-slate-700 rounded-2xl focus:outline-none focus:border-[#00D4FF] text-lg">
-        
-        <button type="submit" 
-                class="w-full py-6 bg-[#00D4FF] text-[#0A0F1C] font-semibold text-xl rounded-3xl hover:bg-[#F5C400] transition-colors">
-          Get Early Access
-        </button>
-      </form>
-      <p onclick="hideWaitlistModal()" class="text-center text-slate-400 mt-6 cursor-pointer">Close</p>
+  <div class="shell" style="position:relative; z-index:2;">
+    <div class="eyebrow">Coming 2026 · Pre-MVP waitlist open</div>
+    <h1 style="font-size:clamp(3rem, 7vw, 5.75rem); line-height:1.02; max-width:920px; color:var(--paper);" class="text-balance">
+      Your digital life.<br><span style="color:var(--continuity);">Never lost.</span>
+    </h1>
+    <p style="font-size:1.4rem; color:var(--mist); max-width:580px; margin-top:1.75rem; line-height:1.55;">
+      Reep is the continuity layer for the digital age — zero-knowledge vaults, life-event verification, and automated legacy transfer for everything you've built online.
+    </p>
+    <div style="display:flex; gap:1rem; margin-top:2.75rem; flex-wrap:wrap;">
+      <a href="demo.html" class="btn btn-primary btn-lg">Launch Demo →</a>
+      <a href="product.html" class="btn btn-ghost btn-lg">See how it works</a>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Heartbeat signature -->
+  <div class="shell" style="position:relative; z-index:2; margin-top:4rem;">
+    <div class="heartbeat-line">
+      <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
+        <path class="heartbeat-path" d="M0,32 L260,32 L300,32 L320,8 L345,58 L368,16 L390,32 L460,32 L900,32 L925,32 L945,10 L968,54 L990,20 L1010,32 L1200,32"/>
+      </svg>
+    </div>
+    <p style="font-family:var(--font-mono); font-size:0.78rem; color:var(--slate-dim); letter-spacing:0.05em; margin-top:0.5rem;">
+      heartbeat status — active · last check-in confirmed
+    </p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="surface-sand section">
+  <div class="shell">
+    <div class="grid md:grid-cols-12 gap-16" style="display:grid; grid-template-columns:repeat(12,1fr); gap:4rem;">
+      <div style="grid-column: span 12 / span 12;" class="md-col-5 reveal">
+        <div class="eyebrow" style="color:#B8853E;">The problem</div>
+        <h2 style="font-size:clamp(2.1rem,4vw,2.9rem); max-width:480px; color:var(--ink);" class="text-balance">Digital oblivion is the silent thief of legacies.</h2>
+      </div>
+      <div style="grid-column: span 12 / span 12;" class="md-col-7 reveal">
+        <p style="font-size:1.15rem; color:var(--slate); line-height:1.7; max-width:620px;">
+          As our lives move online, traditional wills no longer cover what matters most. Billions in crypto, irreplaceable memories, and final wishes remain locked behind passwords no court can unlock.
+        </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-top:2.5rem;">
+          <div class="card" style="padding:1.75rem;"><p style="color:var(--ink); font-weight:500;">Lost financial assets &amp; inaccessible crypto wallets</p></div>
+          <div class="card" style="padding:1.75rem;"><p style="color:var(--ink); font-weight:500;">Locked smartphones and social accounts</p></div>
+          <div class="card" style="padding:1.75rem;"><p style="color:var(--ink); font-weight:500;">Court battles over digital access</p></div>
+          <div class="card" style="padding:1.75rem;"><p style="color:var(--ink); font-weight:500;">Final wishes discovered too late</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION — 3 pillars -->
+<section class="surface-dark section">
+  <div class="shell">
+    <div class="reveal" style="text-align:center; max-width:680px; margin:0 auto 4rem;">
+      <div class="eyebrow" style="justify-content:center;">The continuity layer</div>
+      <h2 style="font-size:clamp(2.1rem,4vw,2.9rem); color:var(--paper);" class="text-balance">Three systems. One unbreakable bridge between generations.</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.75rem;">
+      <div class="card-dark reveal">
+        <div style="width:44px; height:44px; border-radius:12px; background:rgba(43,179,137,0.12); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="11" width="16" height="9" rx="2" stroke="#2BB389" stroke-width="1.6"/><path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#2BB389" stroke-width="1.6"/></svg>
+        </div>
+        <h3 style="font-size:1.35rem; color:var(--paper); margin-bottom:0.65rem;">Zero-knowledge vaults</h3>
+        <p style="color:var(--mist); line-height:1.65;">We never see your data. Only you — and your beneficiaries at the right moment — hold the keys to what's inside.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div style="width:44px; height:44px; border-radius:12px; background:rgba(43,179,137,0.12); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-7-10a4.5 4.5 0 0 1 7-3.5A4.5 4.5 0 0 1 19 11c0 5.65-7 10-7 10Z" stroke="#2BB389" stroke-width="1.6"/></svg>
+        </div>
+        <h3 style="font-size:1.35rem; color:var(--paper); margin-bottom:0.65rem;">Life-event verification</h3>
+        <p style="color:var(--mist); line-height:1.65;">Guardians, heartbeat check-ins, and official records work together so access is never granted too early — or too late.</p>
+      </div>
+      <div class="card-dark reveal">
+        <div style="width:44px; height:44px; border-radius:12px; background:rgba(43,179,137,0.12); display:flex; align-items:center; justify-content:center; margin-bottom:1.5rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h11M11 7l4 5-4 5" stroke="#2BB389" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 5h4v14h-4" stroke="#2BB389" stroke-width="1.6"/></svg>
+        </div>
+        <h3 style="font-size:1.35rem; color:var(--paper); margin-bottom:0.65rem;">Automated legacy transfer</h3>
+        <p style="color:var(--mist); line-height:1.65;">Intelligent, conditional, staged release. Beneficiaries receive a curated Legacy Dashboard — never a password dump.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="surface-soft section-sm">
+  <div class="shell" style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap; text-align:center;">
+    <span style="width:8px; height:8px; border-radius:50%; background:var(--continuity);"></span>
+    <p style="color:var(--mist); font-size:0.98rem;">Built for forward-thinking families and the estate professionals who advise them</p>
+  </div>
+</section>
+
+<!-- FEATURES GRID -->
+<section class="surface-sand section">
+  <div class="shell">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 3.5rem;">
+      <h2 style="font-size:clamp(2rem,4vw,2.6rem); color:var(--ink);">Built for what matters</h2>
+      <p style="color:var(--slate); margin-top:0.75rem; font-size:1.05rem;">Financial assets · legal documents · digital identities · personal legacies</p>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem;">
+      <div class="card reveal">
+        <p class="pill pill-green" style="margin-bottom:1.1rem;">Financial &amp; crypto</p>
+        <p style="font-size:1.4rem; font-weight:500; line-height:1.4; color:var(--ink);">Private keys, seed phrases, insurance policies, and bank details — securely transferred.</p>
+      </div>
+      <div class="card reveal">
+        <p class="pill pill-brass" style="margin-bottom:1.1rem;">Legal &amp; identity</p>
+        <p style="font-size:1.4rem; font-weight:500; line-height:1.4; color:var(--ink);">Wills, power of attorney, birth certificates, and official documents.</p>
+      </div>
+      <div class="card reveal">
+        <p class="pill pill-green" style="margin-bottom:1.1rem;">Digital identity</p>
+        <p style="font-size:1.4rem; font-weight:500; line-height:1.4; color:var(--ink);">Social accounts, domain names, SaaS subscriptions — everything in one place.</p>
+      </div>
+      <div class="card reveal">
+        <p class="pill pill-brass" style="margin-bottom:1.1rem;">Personal legacy</p>
+        <p style="font-size:1.4rem; font-weight:500; line-height:1.4; color:var(--ink);">Video messages, letters, photo archives, and ethical wills that live on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARM HUMAN SECTION -->
+<section class="surface-white section">
+  <div class="shell" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+    <div class="reveal">
+      <img src="https://images.unsplash.com/photo-1496275068113-fff8c90750d1?auto=format&fit=crop&w=1000&q=75" alt="Family walking together at golden hour, hands joined" style="width:100%; border-radius:var(--radius-lg); object-fit:cover; aspect-ratio:4/5;">
+    </div>
+    <div class="reveal">
+      <div class="eyebrow" style="color:#B8853E;">Why we built this</div>
+      <h2 style="font-size:clamp(2rem,3.5vw,2.6rem); color:var(--ink); max-width:480px;" class="text-balance">Not another password manager. A bridge between generations.</h2>
+      <p style="color:var(--slate); font-size:1.1rem; line-height:1.7; margin-top:1.5rem; max-width:480px;">
+        Modern inheritance isn't just real estate and jewelry anymore — it's private keys, subscription credentials, and the photos that hold a family's memory. Reep makes sure none of it disappears.
+      </p>
+      <a href="business-model.html" class="btn btn-dark" style="margin-top:2rem;">Explore the business model →</a>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS MODEL TEASER -->
+<section class="surface-dark section">
+  <div class="shell">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem; margin-bottom:3rem;">
+      <div>
+        <div class="eyebrow">How Reep sustains itself</div>
+        <h2 style="font-size:clamp(2rem,4vw,2.6rem); color:var(--paper); max-width:560px;" class="text-balance">A trust-based model built to last decades, not quarters.</h2>
+      </div>
+      <a href="business-model.html" class="btn btn-ghost">Full breakdown →</a>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem;">
+      <div class="card-dark reveal">
+        <p class="font-mono" style="color:var(--continuity); font-size:0.8rem; letter-spacing:0.06em;">B2C · TIERED</p>
+        <p style="color:var(--paper); font-size:1.2rem; margin-top:0.75rem;">Essential, Pro, and Eternal plans — from $5/mo to a one-time perpetual hosting fee.</p>
+      </div>
+      <div class="card-dark reveal">
+        <p class="font-mono" style="color:var(--continuity); font-size:0.8rem; letter-spacing:0.06em;">B2B2C · PARTNERS</p>
+        <p style="color:var(--paper); font-size:1.2rem; margin-top:0.75rem;">Estate law firms and wealth managers offer Reep as a value-added service.</p>
+      </div>
+      <div class="card-dark reveal">
+        <p class="font-mono" style="color:var(--continuity); font-size:0.8rem; letter-spacing:0.06em;">MOAT · COMPLIANCE</p>
+        <p style="color:var(--paper); font-size:1.2rem; margin-top:0.75rem;">Zero-knowledge architecture plus RUFADAA &amp; GDPR-native design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="surface-sand section" style="border-top:1px solid rgba(14,19,32,0.08); border-bottom:1px solid rgba(14,19,32,0.08);">
+  <div class="shell reveal" style="text-align:center;">
+    <h2 style="font-size:clamp(2.2rem,4.5vw,3.2rem); color:var(--ink); max-width:680px; margin:0 auto;" class="text-balance">Be among the first to secure your digital legacy.</h2>
+    <p style="color:var(--slate); margin-top:1rem; font-size:1.1rem;">Early access is granted to founding members. Limited spots available.</p>
+    <a href="demo.html" class="btn btn-dark btn-lg" style="margin-top:2rem; background:var(--continuity); color:var(--ink);">Launch Demo →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:1rem;">
+          <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+          Reep
+        </div>
+        <p style="max-width:280px; color:var(--slate-dim); font-size:0.92rem; line-height:1.6;">The continuity layer for the digital age. Secure digital inheritance with zero-knowledge encryption and life-event verification.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="product.html">Product</a>
+        <a href="business-model.html">Business Model</a>
+        <a href="security.html">Security</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="demo.html">Launch Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="security.html#compliance">RUFADAA Compliance</a>
+        <a href="security.html#privacy">Privacy</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Reep Systems. All rights reserved.</p>
+      <p>The continuity layer for the digital age.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

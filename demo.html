@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join the Waitlist — Reep</title>
+<meta name="description" content="Reep is coming in 2026. Join the early access waitlist for the continuity layer for the digital age.">
+<link rel="canonical" href="https://reep.app/demo.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="surface-dark" style="min-height:100vh;">
+
+<nav class="nav" style="background:transparent; border-bottom:none; backdrop-filter:none;">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+      Reep
+    </a>
+    <a href="index.html" style="color:var(--mist); font-size:0.9rem;">← Back to site</a>
+  </div>
+</nav>
+
+<main style="min-height:100vh; display:flex; align-items:center; justify-content:center; padding:8rem 1.5rem 4rem; position:relative; overflow:hidden;">
+  <div style="position:absolute; inset:0; background-image:url('https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=2000&q=60'); background-size:cover; background-position:center; opacity:0.1;"></div>
+  <div style="position:absolute; inset:0; background:radial-gradient(ellipse at top, rgba(43,179,137,0.08), transparent 60%);"></div>
+
+  <div style="position:relative; z-index:2; max-width:520px; width:100%; text-align:center;">
+    <div class="pill pill-green" style="margin-bottom:1.75rem; justify-content:center; display:inline-flex;">Coming 2026 · Pre-MVP</div>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.2rem); color:var(--paper); line-height:1.1;" class="text-balance">Be first through the door.</h1>
+    <p style="color:var(--mist); font-size:1.1rem; margin-top:1rem; line-height:1.6;">Reep isn't open yet — we're building the continuity layer for the digital age, carefully. Join the waitlist and we'll let you know the moment early access opens.</p>
+
+    <!-- FORM -->
+    <form id="waitlistForm" onsubmit="return handleWaitlistSubmit(event)" style="margin-top:2.5rem; text-align:left;">
+      <label for="waitlistName" style="display:block; font-size:0.85rem; color:var(--mist); margin-bottom:0.4rem;">Full name</label>
+      <input type="text" id="waitlistName" placeholder="Your name" autocomplete="name"
+        style="width:100%; padding:0.95rem 1.1rem; background:var(--ink-soft); border:1px solid var(--ink-line); border-radius:var(--radius-md); color:var(--paper); font-size:1rem; margin-bottom:1.1rem;">
+
+      <label for="waitlistEmail" style="display:block; font-size:0.85rem; color:var(--mist); margin-bottom:0.4rem;">Email address</label>
+      <input type="email" id="waitlistEmail" placeholder="you@example.com" autocomplete="email" required
+        style="width:100%; padding:0.95rem 1.1rem; background:var(--ink-soft); border:1px solid var(--ink-line); border-radius:var(--radius-md); color:var(--paper); font-size:1rem; margin-bottom:1.1rem;">
+
+      <label for="waitlistRole" style="display:block; font-size:0.85rem; color:var(--mist); margin-bottom:0.4rem;">I'm joining as a</label>
+      <select id="waitlistRole" style="width:100%; padding:0.95rem 1.1rem; background:var(--ink-soft); border:1px solid var(--ink-line); border-radius:var(--radius-md); color:var(--paper); font-size:1rem; margin-bottom:1.5rem;">
+        <option value="individual">Individual planning my digital estate</option>
+        <option value="professional">Estate lawyer / wealth manager</option>
+        <option value="other">Just curious</option>
+      </select>
+
+      <p id="waitlistError" style="display:none; color:#E2604C; font-size:0.85rem; margin-bottom:1rem;"></p>
+
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Join the waitlist</button>
+      <p style="color:var(--slate-dim); font-size:0.8rem; margin-top:1rem; text-align:center;">No spam. No charge. We'll only email you about early access.</p>
+    </form>
+
+    <!-- SUCCESS STATE -->
+    <div id="waitlistSuccess" style="display:none;">
+      <div style="width:64px; height:64px; border-radius:50%; background:rgba(43,179,137,0.12); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#2BB389" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 style="font-size:1.7rem; color:var(--paper);">You're on the list.</h2>
+      <p style="color:var(--mist); margin-top:0.75rem; line-height:1.6;">A confirmation has been sent to <span id="successEmail" class="font-mono" style="color:var(--continuity);"></span>. We'll reach out the moment Reep opens for early access.</p>
+      <div class="heartbeat-line" style="margin-top:2rem;">
+        <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
+          <path class="heartbeat-path" d="M0,32 L260,32 L300,32 L320,8 L345,58 L368,16 L390,32 L460,32 L900,32 L925,32 L945,10 L968,54 L990,20 L1010,32 L1200,32"/>
+        </svg>
+      </div>
+      <a href="index.html" class="btn btn-ghost" style="margin-top:1.5rem;">← Back to home</a>
+    </div>
+  </div>
+</main>
+
+<script src="js/waitlist.js"></script>
+</body>
+</html>

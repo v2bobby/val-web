@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security &amp; Compliance — Reep</title>
+<meta name="description" content="How Reep protects your data: zero-knowledge encryption, RUFADAA and GDPR compliance, data sovereignty, and immutable audit trails.">
+<link rel="canonical" href="https://reep.app/security.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+      Reep
+    </a>
+    <div class="nav-links desktop">
+      <a href="product.html">Product</a>
+      <a href="business-model.html">Business Model</a>
+      <a href="security.html" class="active">Security</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="demo.html" class="btn btn-primary">Launch Demo</a>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="product.html">Product</a>
+    <a href="business-model.html">Business Model</a>
+    <a href="security.html">Security</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="demo.html">Launch Demo</a>
+  </div>
+</nav>
+
+<header class="surface-dark" style="padding:11rem 0 5rem;">
+  <div class="shell">
+    <div class="eyebrow">Security &amp; compliance</div>
+    <h1 style="font-size:clamp(2.6rem,5vw,4rem); color:var(--paper); max-width:760px;" class="text-balance">We don't own your data. We custody it.</h1>
+    <p style="color:var(--mist); font-size:1.2rem; max-width:620px; margin-top:1.25rem; line-height:1.6;">Reep positions itself as a Digital Custodian, not an owner — every architectural and legal decision follows from that distinction.</p>
+  </div>
+</header>
+
+<!-- ZERO KNOWLEDGE -->
+<section class="surface-sand section">
+  <div class="shell" style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+    <div class="reveal">
+      <div class="eyebrow" style="color:#B8853E;">Zero-knowledge architecture</div>
+      <h2 style="font-size:clamp(2rem,3.5vw,2.6rem); color:var(--ink); max-width:480px;" class="text-balance">We never see your data — not even by accident.</h2>
+      <p style="color:var(--slate); margin-top:1.25rem; line-height:1.7; max-width:480px;">Encryption and decryption happen client-side. Reep's servers store ciphertext only. There is no master key, no support-staff override, and no backdoor — because the architecture doesn't include one.</p>
+    </div>
+    <div class="reveal card" style="padding:0; overflow:hidden;">
+      <div style="background:var(--ink); padding:1.25rem 1.5rem;">
+        <span class="font-mono" style="color:var(--mist); font-size:0.78rem;">what reep's servers see</span>
+      </div>
+      <div style="padding:2rem; background:var(--paper); font-family:var(--font-mono); font-size:0.85rem; color:var(--slate); line-height:1.8; word-break:break-all;">
+        7f3a9c1e2b8d4f6a0c5e1b9d3f7a2c8e<br>
+        6b4d8f0a2c9e7b1d5f3a8c0e4b6d2f9a<br>
+        <span style="color:var(--continuity-deep);">— encrypted vault contents, indecipherable without your key —</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section id="compliance" class="surface-white section">
+  <div class="shell">
+    <div class="reveal" style="margin-bottom:3.5rem;">
+      <div class="eyebrow" style="color:#B8853E;">RUFADAA &amp; GDPR</div>
+      <h2 style="font-size:clamp(2rem,4vw,2.6rem); color:var(--ink); max-width:640px;" class="text-balance">Navigating the legal landscape of digital inheritance, by design.</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.75rem;">
+      <div class="card reveal">
+        <h3 style="font-size:1.15rem; color:var(--ink);">RUFADAA-aligned</h3>
+        <p style="color:var(--slate); margin-top:0.65rem; line-height:1.65;">Reep's release framework is built around the Revised Uniform Fiduciary Access to Digital Assets Act, giving fiduciaries a clear, lawful path to act.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="font-size:1.15rem; color:var(--ink);">GDPR-native</h3>
+        <p style="color:var(--slate); margin-top:0.65rem; line-height:1.65;">Data minimization, the right to erasure, and explicit consent are built into the product, not bolted on for regional compliance.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="font-size:1.15rem; color:var(--ink);">Digital Custodian, not owner</h3>
+        <p style="color:var(--slate); margin-top:0.65rem; line-height:1.65;">Reep never claims ownership of stored data — a distinction that shapes everything from contract terms to deletion rights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA SOVEREIGNTY -->
+<section id="privacy" class="surface-sand section">
+  <div class="shell">
+    <div class="reveal" style="margin-bottom:3rem;">
+      <div class="eyebrow" style="color:#B8853E;">Data sovereignty &amp; audit trails</div>
+      <h2 style="font-size:clamp(2rem,4vw,2.6rem); color:var(--ink); max-width:600px;">You own it. We just keep it safe.</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem;">
+      <div class="card reveal">
+        <h3 style="font-size:1.05rem; color:var(--ink);">100% data ownership</h3>
+        <p style="color:var(--slate); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">Your data is portable and can be deleted at any time, no questions asked.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="font-size:1.05rem; color:var(--ink);">Jurisdictional compliance</h3>
+        <p style="color:var(--slate); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">Regional data centers comply with local privacy laws around digital inheritance.</p>
+      </div>
+      <div class="card reveal">
+        <h3 style="font-size:1.05rem; color:var(--ink);">Immutable audit trail</h3>
+        <p style="color:var(--slate); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">Every vault interaction is logged on a private, tamper-evident ledger to prevent fraud during transfer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="surface-dark section-sm">
+  <div class="shell reveal" style="text-align:center;">
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem); color:var(--paper);">Questions for our compliance team?</h2>
+    <a href="about.html#contact" class="btn btn-primary btn-lg" style="margin-top:1.75rem;">Get in touch →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:1rem;">
+          <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+          Reep
+        </div>
+        <p style="max-width:280px; color:var(--slate-dim); font-size:0.92rem; line-height:1.6;">The continuity layer for the digital age.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="product.html">Product</a>
+        <a href="business-model.html">Business Model</a>
+        <a href="security.html">Security</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="demo.html">Launch Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="security.html#compliance">RUFADAA Compliance</a>
+        <a href="security.html#privacy">Privacy</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Reep Systems. All rights reserved.</p>
+      <p>The continuity layer for the digital age.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+/* ============================================
+   REEP — Design System
+   The Continuity Layer for the Digital Age
+   ============================================ */
+
+:root {
+  /* Continuity Blue palette */
+  --ink:        #0E1320;   /* primary dark surface */
+  --ink-soft:   #1A2235;   /* secondary dark surface */
+  --ink-line:   #2A3349;   /* dark hairlines/borders */
+  --sand:       #FAF6EF;   /* warm light surface */
+  --sand-dim:   #F1EBDF;   /* light surface, secondary */
+  --paper:      #FFFFFF;
+  --continuity: #2BB389;   /* living-green accent */
+  --continuity-deep: #1E8C6B;
+  --brass:      #C9A86A;   /* sparing legacy accent */
+  --slate:      #5B6B7F;   /* body text on light */
+  --slate-dim:  #8C96A6;
+  --mist:       #B9C2D0;   /* faint text on dark */
+  --white-90:   rgba(248, 250, 252, 0.9);
+  --white-60:   rgba(248, 250, 252, 0.6);
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --container: 1280px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--sand);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+a { text-decoration: none; color: inherit; }
+
+::selection { background: var(--continuity); color: var(--ink); }
+
+:focus-visible {
+  outline: 2px solid var(--continuity);
+  outline-offset: 3px;
+}
+
+/* ---------- Layout ---------- */
+.shell {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media (max-width: 768px) {
+  .shell { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+
+.surface-dark { background: var(--ink); color: var(--white-90); }
+.surface-sand { background: var(--sand); color: var(--ink); }
+.surface-soft { background: var(--ink-soft); color: var(--white-90); }
+.surface-white { background: var(--paper); color: var(--ink); }
+
+/* ---------- Nav ---------- */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(14, 19, 32, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--ink-line);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2rem;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+.nav-links a {
+  color: var(--mist);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--paper); }
+.nav-links a.active { color: var(--continuity); }
+
+@media (max-width: 920px) {
+  .nav-links.desktop { display: none; }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--paper);
+  letter-spacing: -0.02em;
+}
+.logo-mark {
+  width: 30px; height: 30px;
+  flex-shrink: 0;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.7rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--continuity);
+  color: var(--ink);
+}
+.btn-primary:hover { background: #34C99A; transform: translateY(-1px); }
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--ink-line);
+  color: var(--white-90);
+}
+.btn-ghost:hover { border-color: var(--continuity); color: var(--continuity); }
+
+.btn-dark {
+  background: var(--ink);
+  color: var(--paper);
+}
+.btn-dark:hover { background: var(--ink-soft); transform: translateY(-1px); }
+
+.btn-lg { padding: 1.1rem 2.3rem; font-size: 1.05rem; }
+
+/* ---------- Eyebrow / labels ---------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--continuity);
+  margin-bottom: 1.1rem;
+}
+.eyebrow::before {
+  content: '';
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--continuity);
+}
+
+/* ---------- Heartbeat signature element ---------- */
+.heartbeat-line {
+  width: 100%;
+  height: 64px;
+  overflow: hidden;
+}
+.heartbeat-line svg { width: 100%; height: 100%; display: block; }
+.heartbeat-path {
+  stroke: var(--continuity);
+  stroke-width: 1.75;
+  fill: none;
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: heartbeat-draw 3.6s ease-in-out infinite;
+}
+@keyframes heartbeat-draw {
+  0% { stroke-dashoffset: 1400; }
+  55% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 0; opacity: 0.25; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .heartbeat-path { animation: none; stroke-dashoffset: 0; }
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  border: 1px solid rgba(14,19,32,0.06);
+}
+.card-dark {
+  background: var(--ink-soft);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  border: 1px solid var(--ink-line);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--ink);
+  color: var(--mist);
+  border-top: 1px solid var(--ink-line);
+  padding: 4.5rem 0 2.5rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+}
+.footer-col h4 {
+  color: var(--paper);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+}
+.footer-col a {
+  display: block;
+  color: var(--mist);
+  font-size: 0.92rem;
+  margin-bottom: 0.7rem;
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--continuity); }
+.footer-bottom {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ink-line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--slate-dim);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ---------- Section spacing ---------- */
+.section { padding: 7rem 0; }
+.section-sm { padding: 4.5rem 0; }
+@media (max-width: 768px) {
+  .section { padding: 4.5rem 0; }
+  .section-sm { padding: 3rem 0; }
+}
+
+/* ---------- Reveal-on-scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- Pill badges ---------- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+}
+.pill-green { background: rgba(43,179,137,0.12); color: var(--continuity-deep); }
+.pill-brass { background: rgba(201,168,106,0.15); color: #9C7B3E; }
+
+/* ---------- Utility ---------- */
+.text-balance { text-wrap: balance; }
+.divider { height: 1px; background: var(--ink-line); border: none; }
+.divider-light { height: 1px; background: rgba(14,19,32,0.08); border: none; }
+
+/* ---------- Mobile nav toggle ---------- */
+.mobile-toggle {
+  display: none;
+  background: none; border: none;
+  color: var(--paper);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 920px) {
+  .mobile-toggle { display: block; }
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 68px; left: 0; right: 0;
+  background: var(--ink);
+  border-bottom: 1px solid var(--ink-line);
+  z-index: 99;
+  padding: 1.5rem 2rem 2rem;
+}
+.mobile-menu.open { display: block; }
+.mobile-menu a {
+  display: block;
+  padding: 0.85rem 0;
+  color: var(--white-90);
+  font-size: 1.05rem;
+  border-bottom: 1px solid var(--ink-line);
+}
+.mobile-menu a:last-child { border-bottom: none; }

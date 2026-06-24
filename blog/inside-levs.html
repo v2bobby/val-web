@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside LEVS: How We Decide When to Release Your Data — Reep</title>
+<meta name="description" content="The hardest problem in digital inheritance isn't storage, it's timing. Here's how Reep's three-layer Life-Event Verification System decides when to act.">
+<link rel="canonical" href="https://reep.app/blog/inside-levs.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+      Reep
+    </a>
+    <div class="nav-links desktop">
+      <a href="../product.html">Product</a>
+      <a href="../business-model.html">Business Model</a>
+      <a href="../security.html">Security</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="../resources.html" class="active">Resources</a>
+      <a href="../about.html">About</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="../demo.html" class="btn btn-primary">Launch Demo</a>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../product.html">Product</a>
+    <a href="../business-model.html">Business Model</a>
+    <a href="../security.html">Security</a>
+    <a href="../pricing.html">Pricing</a>
+    <a href="../resources.html">Resources</a>
+    <a href="../about.html">About</a>
+    <a href="../demo.html">Launch Demo</a>
+  </div>
+</nav>
+
+<header class="surface-dark" style="padding:11rem 0 4rem;">
+  <div class="shell" style="max-width:760px;">
+    <p class="pill pill-green" style="margin-bottom:1.5rem;">Inside Reep</p>
+    <h1 style="font-size:clamp(2.2rem,4.5vw,3.2rem); color:var(--paper); line-height:1.15;" class="text-balance">Inside LEVS: how we decide when to release your data</h1>
+    <p style="color:var(--slate-dim); font-size:0.9rem; margin-top:1.5rem; font-family:var(--font-mono);">Reep Editorial Team · 8 min read</p>
+  </div>
+</header>
+
+<article class="surface-white section">
+  <div class="shell" style="max-width:680px;">
+    <p style="font-size:1.15rem; color:var(--slate); line-height:1.75;">Storing encrypted data is, relatively speaking, the easy part. The genuinely hard problem in digital inheritance is deciding <em>when</em> to unlock it. Release too early and you've handed someone's private keys to the wrong person while they're still alive. Release too late and the entire point of the system is defeated.</p>
+
+    <p style="color:var(--slate); line-height:1.75; margin-top:1rem;">This is the problem the Life-Event Verification System, or LEVS, exists to solve — not with a single signal, but three independent layers that have to agree.</p>
+
+    <h2 style="font-size:1.5rem; color:var(--ink); margin-top:2.5rem;">Layer one: guardians</h2>
+    <p style="color:var(--slate); line-height:1.75; margin-top:1rem;">Every Reep user appoints 2 to 5 trusted contacts — guardians. When a possible life event occurs, these guardians must reach consensus before any transfer process begins. This is a deliberately human layer: people who know the user personally are far better at catching a false alarm than any algorithm.</p>
+
+    <h2 style="font-size:1.5rem; color:var(--ink); margin-top:2.5rem;">Layer two: the heartbeat</h2>
+    <p style="color:var(--slate); line-height:1.75; margin-top:1rem;">For users who want a more automated safety net, Reep monitors regular check-ins — email, SMS, or app notification. Miss your check-in window (a 90-day default, fully configurable) and the system doesn't release anything on its own. It simply initiates the guardian verification sequence above. The heartbeat triggers a conversation between humans, not an automatic unlock.</p>
+
+    <h2 style="font-size:1.5rem; color:var(--ink); margin-top:2.5rem;">Layer three: official records</h2>
+    <p style="color:var(--slate); line-height:1.75; margin-top:1rem;">For high-tier accounts, Reep can integrate with digital death registry APIs or require a verified death certificate, audited by a legal compliance partner. This layer exists for the cases that matter most — large estates, business continuity, situations where certainty isn't optional.</p>
+
+    <h2 style="font-size:1.5rem; color:var(--ink); margin-top:2.5rem;">Why three layers, not one</h2>
+    <p style="color:var(--slate); line-height:1.75; margin-top:1rem;">Any single signal has a failure mode. Guardians alone are vulnerable to collusion or honest misjudgment. A heartbeat alone can't tell the difference between "deceased" and "on a long hiking trip with no signal." Official records alone are slow and don't cover every jurisdiction equally. Layered together, each one covers the others' blind spot.</p>
+
+    <div class="card" style="margin-top:2.5rem; background:var(--sand);">
+      <p style="color:var(--ink); font-weight:500;">The takeaway</p>
+      <p style="color:var(--slate); margin-top:0.5rem; line-height:1.65;">LEVS isn't designed to be fast. It's designed to be right — because the cost of an early release is privacy, and the cost of a late one is the entire reason someone signed up.</p>
+    </div>
+  </div>
+</article>
+
+<section class="surface-sand section-sm">
+  <div class="shell reveal" style="text-align:center;">
+    <h2 style="font-size:clamp(1.6rem,3vw,2.1rem); color:var(--ink);">See LEVS explained on the product page.</h2>
+    <a href="../product.html" class="btn btn-dark btn-lg" style="margin-top:1.5rem;">Explore the product →</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:1rem;">
+          <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+          Reep
+        </div>
+        <p style="max-width:280px; color:var(--slate-dim); font-size:0.92rem; line-height:1.6;">The continuity layer for the digital age.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="../product.html">Product</a>
+        <a href="../business-model.html">Business Model</a>
+        <a href="../security.html">Security</a>
+        <a href="../pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="../about.html">About</a>
+        <a href="../resources.html">Resources</a>
+        <a href="../demo.html">Launch Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../security.html#compliance">RUFADAA Compliance</a>
+        <a href="../security.html#privacy">Privacy</a>
+        <a href="../about.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Reep Systems. All rights reserved.</p>
+      <p>The continuity layer for the digital age.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
