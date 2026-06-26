@@ -61,13 +61,12 @@ Then open `http://localhost:8000`. No build step required.
 
 - The waitlist form (`demo.html` / `js/waitlist.js`) does **not** submit anywhere yet — it shows a polished success state client-side only. Wire up `handleWaitlistSubmit()` in `js/waitlist.js` to a real backend or provider (e.g. ConvertKit, Buttondown, custom API) before launch.
 - Images are hotlinked from Unsplash's CDN under the Unsplash License (free, no attribution required). See `IMAGE_SOURCES.md` for the verified source list. For production, consider downloading and self-hosting for reliability and performance.
-- Founder contact details are placeholders ("Contact details coming soon") pending real info for Ugwu Jonas and Emeh David.
+- Founder contact is now linked directly on the About page via LinkedIn for Ugwu Jonas.
 
-## Founders
+## Founder
 
-**Ugwu Jonas** — Co-Founder
-**Emeh David** — Co-Founder
-*(Contact details to be added)*
+**Ugwu Jonas** — Founder
+[LinkedIn](https://www.linkedin.com/in/jonas-ugwu-31a28340b)
 
 ## License
 
