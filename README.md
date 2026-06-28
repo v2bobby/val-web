@@ -6,7 +6,7 @@ A full, multi-page marketing site for Reep — a mission-critical digital inheri
 
 ## Live Site
 
-https://reep.app *(placeholder — update once domain is live)*
+https://reep.cc
 
 ## Pages
 
