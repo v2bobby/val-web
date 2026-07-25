@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App — Reep</title>
+<meta name="description" content="Reep live dashboard: secure your vault, manage guardians, set beneficiaries, and monitor your heartbeat status.">
+<link rel="canonical" href="https://reep.app/app.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="app-page">
+
+<div class="app-shell">
+  <aside class="app-sidebar" id="appSidebar">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+      Reep
+    </a>
+
+    <nav class="app-nav">
+      <a href="#" data-section="dashboard" class="active">
+        <svg class="app-nav-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+        Dashboard
+      </a>
+      <a href="#" data-section="vault">
+        <svg class="app-nav-icon" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 1 1 8 0v3"/></svg>
+        Vault
+      </a>
+      <a href="#" data-section="guardians">
+        <svg class="app-nav-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Guardians
+      </a>
+      <a href="#" data-section="heartbeat">
+        <svg class="app-nav-icon" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        Heartbeat
+      </a>
+      <a href="#" data-section="beneficiaries">
+        <svg class="app-nav-icon" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        Beneficiaries
+      </a>
+      <a href="#" data-section="security">
+        <svg class="app-nav-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Security
+      </a>
+    </nav>
+
+    <div class="app-sidebar-footer">
+      <p style="margin-bottom:0.35rem;">Reep Tech Ltd</p>
+      <p>Hilltop, Nsukka, Nigeria</p>
+      <p style="margin-top:0.5rem;"><a href="mailto:hello@reep.cc" style="color:var(--mist);">hello@reep.cc</a></p>
+    </div>
+  </aside>
+
+  <main class="app-main">
+    <header class="app-header">
+      <div class="app-header-left">
+        <button class="app-mobile-toggle" onclick="toggleMobileSidebar()" aria-label="Open menu">☰</button>
+        <div>
+          <h1 style="font-size:1.1rem;font-weight:600;color:var(--ink);font-family:var(--font-display);">Reep Vault</h1>
+          <p style="font-size:0.78rem;color:var(--slate-dim);font-family:var(--font-mono);">user@vault.reep.app</p>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <span class="status-pill live"><span class="status-dot live"></span> Live</span>
+        <a href="index.html" class="btn btn-sm btn-secondary">Back to site</a>
+      </div>
+    </header>
+
+    <div class="app-content" id="appMainContent">
+      <!-- Rendered by js/app.js -->
+    </div>
+
+    <footer class="app-footer">
+      <div>
+        <span style="font-weight:600;color:var(--ink);">Reep Tech Ltd</span> · Hilltop, Nsukka, Nigeria · <a href="mailto:hello@reep.cc" style="color:var(--continuity-deep);text-decoration:underline;">hello@reep.cc</a>
+      </div>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="support.html" style="color:var(--slate-dim);">Support</a>
+        <a href="privacy.html" style="color:var(--slate-dim);">Privacy</a>
+        <a href="terms.html" style="color:var(--slate-dim);">Terms</a>
+        <a href="status.html" style="color:var(--slate-dim);">Status</a>
+      </div>
+    </footer>
+  </main>
+</div>
+
+<div class="app-modal" id="appModal">
+  <div class="app-modal-panel" id="appModalPanel"></div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

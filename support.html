@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Reep</title>
+<meta name="description" content="Reep Help Center. Find answers about vault setup, guardians, heartbeat check-ins, billing, security, and account management.">
+<link rel="canonical" href="https://reep.app/support.html">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+      Reep
+    </a>
+    <div class="nav-links desktop">
+      <a href="product.html">Product</a>
+      <a href="business-model.html">Business Model</a>
+      <a href="security.html">Security</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="app.html" class="btn btn-primary">Open App</a>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="product.html">Product</a>
+    <a href="business-model.html">Business Model</a>
+    <a href="security.html">Security</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="app.html">Open App</a>
+  </div>
+</nav>
+
+<header class="surface-dark" style="padding:11rem 0 4rem; text-align:center;">
+  <div class="shell">
+    <div class="eyebrow" style="justify-content:center;">Support</div>
+    <h1 style="font-size:clamp(2.2rem,4.5vw,3.2rem); color:var(--paper); line-height:1.15;" class="text-balance">Help Center</h1>
+    <p style="color:var(--mist); font-size:1.1rem; max-width:560px; margin:1.25rem auto 0; line-height:1.6;">Find answers or reach out to the Reep team directly.</p>
+  </div>
+</header>
+
+<section class="surface-sand section">
+  <div class="shell">
+    <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.3rem); color:var(--ink);">Contact us</h2>
+      <p style="color:var(--slate); margin-top:0.75rem;">Our support team is reachable by email during business hours.</p>
+      <a href="mailto:hello@reep.cc" style="display:inline-block; margin-top:1.25rem; padding:1rem 2rem; background:var(--ink); color:var(--paper); border-radius:999px; font-weight:600;">hello@reep.cc</a>
+    </div>
+
+    <div class="reveal" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem;">
+      <div class="card" style="padding:1.75rem;">
+        <h3 style="font-size:1.15rem; color:var(--ink); margin-bottom:0.75rem;">Getting started</h3>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">How do I create a vault?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Open the Reep app, sign up with your email, and follow the vault setup wizard. Your encryption keys are generated in your browser — Reep never sees them.</p>
+          </details>
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">What can I store in Reep?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">You can store passwords, seed phrases, legal documents, account credentials, video messages, photos, and written instructions.</p>
+          </details>
+          <details>
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">Is there a free plan?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Yes — you can start with a free trial and explore the app before selecting a paid plan.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="card" style="padding:1.75rem;">
+        <h3 style="font-size:1.15rem; color:var(--ink); margin-bottom:0.75rem;">Guardians &amp; beneficiaries</h3>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">Who should be a guardian?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Choose people you trust deeply — family members, close friends, or professional advisors. They will be contacted only if a life event needs to be verified.</p>
+          </details>
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">Can I change my beneficiaries?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Yes. You can update beneficiaries, guardians, and release conditions at any time from the app settings.</p>
+          </details>
+          <details>
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">What happens if a guardian doesn't respond?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Reep requires consensus among your configured guardians. If a guardian is unreachable, the verification process will wait for the required number of responses.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="card" style="padding:1.75rem;">
+        <h3 style="font-size:1.15rem; color:var(--ink); margin-bottom:0.75rem;">Security &amp; privacy</h3>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">Can Reep read my vault contents?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">No. Reep uses zero-knowledge encryption. Your data is encrypted in your browser before it reaches our servers.</p>
+          </details>
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">What happens if I lose my password?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Reep provides a recovery process using your registered email and recovery key. Because of zero-knowledge encryption, we cannot reset your vault without your recovery credentials.</p>
+          </details>
+          <details>
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">Is Reep compliant with RUFADAA?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Reep's release framework is designed to align with RUFADAA principles. See our <a href="security.html#compliance" style="color:var(--continuity-deep); text-decoration:underline;">Security page</a> for details.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="card" style="padding:1.75rem;">
+        <h3 style="font-size:1.15rem; color:var(--ink); margin-bottom:0.75rem;">Billing</h3>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">Can I cancel my subscription?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Yes. You can cancel or downgrade at any time from your account settings.</p>
+          </details>
+          <details style="border-bottom:1px solid rgba(14,19,32,0.08); padding-bottom:0.75rem;">
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">What payment methods are accepted?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">Reep accepts major credit cards and selected regional payment methods. Payment options are displayed at checkout.</p>
+          </details>
+          <details>
+            <summary style="font-weight:500; color:var(--ink); cursor:pointer;">What is the Eternal Plan?</summary>
+            <p style="color:var(--slate); font-size:0.92rem; line-height:1.6; margin-top:0.5rem;">The Eternal Plan is a one-time fee that covers extended vault maintenance for 50+ years after your death, enabling long-term time-delayed messages.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:1rem;">
+          <span class="logo-mark"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="13.5" stroke="#2BB389" stroke-width="2"/><path d="M9 16.5C9 16.5 11 9 15 9C19 9 21 16.5 21 16.5" stroke="#2BB389" stroke-width="2" stroke-linecap="round"/><circle cx="15" cy="20" r="2" fill="#2BB389"/></svg></span>
+          Reep
+        </div>
+        <p style="max-width:280px; color:var(--slate-dim); font-size:0.92rem; line-height:1.6;">The continuity layer for the digital age.</p>
+        <p style="max-width:280px; color:var(--slate-dim); font-size:0.82rem; line-height:1.6; margin-top:1rem;">
+          <strong>Reep Tech Ltd</strong><br>
+          Hilltop, Nsukka, Nigeria<br>
+          <a href="mailto:hello@reep.cc" style="color:var(--mist);">hello@reep.cc</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="product.html">Product</a>
+        <a href="app.html">Open App</a>
+        <a href="business-model.html">Business Model</a>
+        <a href="security.html">Security</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="support.html">Support</a>
+        <a href="status.html">Status</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="security.html#compliance">RUFADAA Compliance</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="about.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Reep Tech Ltd. All rights reserved.</p>
+      <p>The continuity layer for the digital age.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

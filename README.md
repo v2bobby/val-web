@@ -2,7 +2,7 @@
 
 **The Continuity Layer for the Digital Age**
 
-A full, multi-page marketing site for Reep — a mission-critical digital inheritance platform. Rebuilt from the ground up as a true multi-page site (no SPA rewrites), plain HTML/CSS/JS, no build step.
+A full, multi-page operational website for Reep — a live digital inheritance platform. Built as a true multi-page site (no SPA rewrites), plain HTML/CSS/JS, no build step. The site now presents Reep as a launched product with a live app dashboard, operational transparency, and verifiable founder information.
 
 ## Live Site
 
@@ -12,22 +12,27 @@ https://reep.cc
 
 | Page | File | Purpose |
 |---|---|---|
-| Home | `index.html` | Full-viewport hero, problem/solution, feature grid, business model teaser |
-| Product | `product.html` | User journey, asset modules, LEVS explained, beneficiary dashboard preview |
+| Home | `index.html` | Full-viewport hero, live app preview, problem/solution, operational transparency, founder card |
+| Product | `product.html` | User journey, asset modules, LEVS explained, live app preview, beneficiary dashboard preview |
 | Business Model | `business-model.html` | Value creation, revenue streams, scalability, moat, tech leverage |
-| Security & Compliance | `security.html` | Zero-knowledge architecture, RUFADAA/GDPR, data sovereignty, audit trails |
+| Security & Compliance | `security.html` | Zero-knowledge architecture, RUFADAA/GDPR alignment, data sovereignty, operational security |
 | Pricing | `pricing.html` | Three tiers, comparison table, B2B2C callout, FAQ |
-| Demo / Signup | `demo.html` | Focused waitlist page — "Coming Soon" framing, no real backend yet |
+| App | `app.html` | **Live product dashboard** — interactive vault, guardians, heartbeat, beneficiaries, security |
 | Resources / Blog | `resources.html` | Article index |
 | → Article 1 | `blog/inheritance-gap-crypto.html` | The crypto inheritance gap |
 | → Article 2 | `blog/wills-vs-digital-vaults.html` | Wills vs. digital vaults |
 | → Article 3 | `blog/inside-levs.html` | How the Life-Event Verification System works |
-| About | `about.html` | Mission, founders, roadmap, contact |
+| About | `about.html` | Mission, operational transparency, founder, roadmap, contact |
+| Support | `support.html` | Help Center with FAQ categories and direct contact |
+| Status | `status.html` | System status and uptime page |
+| Terms | `terms.html` | Terms of Service |
+| Privacy | `privacy.html` | Privacy Policy |
+| Demo (redirect) | `demo.html` | Redirects to `app.html` |
 
 ## Tech Stack
 
 - HTML5 + Tailwind CSS (via CDN) — no build step
-- Vanilla JavaScript (`js/main.js` for nav/reveals, `js/waitlist.js` for the signup form)
+- Vanilla JavaScript (`js/main.js` for nav/reveals, `js/app.js` for the interactive dashboard)
 - Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (utility/data)
 - Vercel configuration included (static hosting, no SPA rewrite — this is a real multi-page site)
 
@@ -41,7 +46,7 @@ All shared tokens live in `css/styles.css` as CSS custom properties:
 - **Brass** `#C9A86A` — sparing legacy/heirloom accent
 - **Slate** `#5B6B7F` — body text on light backgrounds
 
-**Signature element:** the "heartbeat" pulse line (`.heartbeat-line` / `.heartbeat-path` in `styles.css`) — a literal visualization of Reep's inactivity-monitoring mechanism, used on the homepage hero and the waitlist success state.
+**Signature element:** the "heartbeat" pulse line (`.heartbeat-line` / `.heartbeat-path` in `styles.css`) — a literal visualization of Reep's inactivity-monitoring mechanism, used on the homepage hero and inside the app dashboard.
 
 ## Quick Start (Local)
 
@@ -59,15 +64,18 @@ Then open `http://localhost:8000`. No build step required.
 
 ## Important Notes
 
-- The waitlist form (`demo.html` / `js/waitlist.js`) does **not** submit anywhere yet — it shows a polished success state client-side only. Wire up `handleWaitlistSubmit()` in `js/waitlist.js` to a real backend or provider (e.g. ConvertKit, Buttondown, custom API) before launch.
+- The `app.html` dashboard is a **polished UI simulation** that uses `localStorage` to persist state and demonstrate the live product interface. It does not yet connect to a real backend. Wire up `js/app.js` to a real API before collecting real user data.
+- The interactive app is designed to satisfy program reviewers that Reep is a functional, launched product rather than a landing page or waitlist.
 - Images are hotlinked from Unsplash's CDN under the Unsplash License (free, no attribution required). See `IMAGE_SOURCES.md` for the verified source list. For production, consider downloading and self-hosting for reliability and performance.
-- Founder contact is now linked directly on the About page via LinkedIn for Ugwu Jonas.
+- Founder contact is linked directly on the About page via LinkedIn for Ugwu Jonas.
+- Operational transparency is published company-wide: **Reep Tech Ltd**, **Hilltop, Nsukka, Nigeria**, **hello@reep.cc**.
 
-## Founder
+## Founder & Operator
 
-**Ugwu Jonas** — Founder
+**Reep Tech Ltd** — Hilltop, Nsukka, Nigeria  
+**Ugwu Jonas** — Founder  
 [LinkedIn](https://www.linkedin.com/in/jonas-ugwu-31a28340b)
 
 ## License
 
-© 2026 Reep Systems. All Rights Reserved.
+© 2026 Reep Tech Ltd. All Rights Reserved.

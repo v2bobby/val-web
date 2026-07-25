@@ -27,7 +27,7 @@
       <a href="about.html">About</a>
     </div>
     <div style="display:flex; align-items:center; gap:1rem;">
-      <a href="demo.html" class="btn btn-primary">Launch Demo</a>
+      <a href="app.html" class="btn btn-primary">Open App</a>
       <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Open menu">☰</button>
     </div>
   </div>
@@ -38,7 +38,7 @@
     <a href="pricing.html">Pricing</a>
     <a href="resources.html">Resources</a>
     <a href="about.html">About</a>
-    <a href="demo.html">Launch Demo</a>
+    <a href="app.html">Open App</a>
   </div>
 </nav>
 
@@ -57,6 +57,7 @@
       <div class="eyebrow" style="color:#B8853E;">Zero-knowledge architecture</div>
       <h2 style="font-size:clamp(2rem,3.5vw,2.6rem); color:var(--ink); max-width:480px;" class="text-balance">We never see your data — not even by accident.</h2>
       <p style="color:var(--slate); margin-top:1.25rem; line-height:1.7; max-width:480px;">Encryption and decryption happen client-side. Reep's servers store ciphertext only. There is no master key, no support-staff override, and no backdoor — because the architecture doesn't include one.</p>
+      <a href="app.html" class="btn btn-dark" style="margin-top:1.75rem;">Open the secure app →</a>
     </div>
     <div class="reveal card" style="padding:0; overflow:hidden;">
       <div style="background:var(--ink); padding:1.25rem 1.5rem;">
@@ -119,10 +120,39 @@
   </div>
 </section>
 
-<section class="surface-dark section-sm">
+<!-- OPERATIONAL SECURITY -->
+<section class="surface-dark section">
+  <div class="shell">
+    <div class="reveal" style="margin-bottom:3.5rem;">
+      <div class="eyebrow">Operational security</div>
+      <h2 style="font-size:clamp(2rem,4vw,2.6rem); color:var(--paper); max-width:640px;" class="text-balance">Security is not a feature. It's the foundation.</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem;">
+      <div class="card-dark reveal">
+        <h3 style="font-size:1.1rem; color:var(--paper);">Client-side encryption</h3>
+        <p style="color:var(--mist); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">Data is encrypted in the browser before upload. Reep servers never process plaintext.</p>
+      </div>
+      <div class="card-dark reveal">
+        <h3 style="font-size:1.1rem; color:var(--paper);">TLS 1.3 in transit</h3>
+        <p style="color:var(--mist); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">All connections between the app and Reep infrastructure are encrypted end-to-end.</p>
+      </div>
+      <div class="card-dark reveal">
+        <h3 style="font-size:1.1rem; color:var(--paper);">Encrypted at rest</h3>
+        <p style="color:var(--mist); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">Vault blobs are stored with AES-256 encryption keys managed outside the application layer.</p>
+      </div>
+      <div class="card-dark reveal">
+        <h3 style="font-size:1.1rem; color:var(--paper);">Access controls</h3>
+        <p style="color:var(--mist); margin-top:0.6rem; font-size:0.95rem; line-height:1.6;">Multi-factor authentication, session limits, and guardian consensus protect every release.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="surface-sand section-sm">
   <div class="shell reveal" style="text-align:center;">
-    <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem); color:var(--paper);">Questions for our compliance team?</h2>
-    <a href="about.html#contact" class="btn btn-primary btn-lg" style="margin-top:1.75rem;">Get in touch →</a>
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem); color:var(--ink);">Questions for our compliance team?</h2>
+    <p style="color:var(--slate); margin-top:0.75rem;">Reach us at <a href="mailto:hello@reep.cc" style="color:var(--continuity-deep); text-decoration:underline;">hello@reep.cc</a>.</p>
+    <a href="about.html#contact" class="btn btn-dark btn-lg" style="margin-top:1.75rem;">Get in touch →</a>
   </div>
 </section>
 
@@ -135,10 +165,16 @@
           Reep
         </div>
         <p style="max-width:280px; color:var(--slate-dim); font-size:0.92rem; line-height:1.6;">The continuity layer for the digital age.</p>
+        <p style="max-width:280px; color:var(--slate-dim); font-size:0.82rem; line-height:1.6; margin-top:1rem;">
+          <strong>Reep Tech Ltd</strong><br>
+          Hilltop, Nsukka, Nigeria<br>
+          <a href="mailto:hello@reep.cc" style="color:var(--mist);">hello@reep.cc</a>
+        </p>
       </div>
       <div class="footer-col">
         <h4>Platform</h4>
         <a href="product.html">Product</a>
+        <a href="app.html">Open App</a>
         <a href="business-model.html">Business Model</a>
         <a href="security.html">Security</a>
         <a href="pricing.html">Pricing</a>
@@ -147,17 +183,19 @@
         <h4>Company</h4>
         <a href="about.html">About</a>
         <a href="resources.html">Resources</a>
-        <a href="demo.html">Launch Demo</a>
+        <a href="support.html">Support</a>
+        <a href="status.html">Status</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
         <a href="security.html#compliance">RUFADAA Compliance</a>
-        <a href="security.html#privacy">Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
         <a href="about.html#contact">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Reep Systems. All rights reserved.</p>
+      <p>© 2026 Reep Tech Ltd. All rights reserved.</p>
       <p>The continuity layer for the digital age.</p>
     </div>
   </div>
